@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbs5gXUoVHZKgRylN3fFQCODWQP5DFWWKxRl2D9yS4s5L2+O4UHvI4a06M1xNl" crossorigin="anonymous">
+    <style>
+        /* BEM CSS */
+        
+        .block {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        .block__element {
+            background-color: #F5EEE6;
+            padding: 10px;
+            border-radius: 12%;
+        }
+        
+        .block__element--modifier {
+            color: #E6A4B4;
+            font-weight: bold;
+        }
+        /* #id and .class */
+        
+        #header {
+            background-color: #FEEEE6;
+            color: #E6A4B4;
+            padding: 10px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #F3D7CA;
+            color: #D04848;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        /* Console and Debugger */
+        
+        .console-output {
+            background-color: #F5EEE6;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Code Example</title>
+</head>
+
+<body>
+    <!-- Bootstrap Example -->
+    <div class="container">
+        <h1 class="mt-5">Bootstrap Example</h1>
+    </div>
+
+    <!-- BEM Example -->
+    <div class="block">
+        <div class="block__element">
+            <p class="block__element--modifier">Hello, BEM!</p>
+        </div>
+    </div>
+
+    <!-- #id and .class Example -->
+    <div id="header">
+        <h2>Header Section</h2>
+        <a href="#" class="button">Click me!</a>
+    </div>
+
+    <!-- Ajax Example -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/todos/1",
+                method: "GET",
+                success: function(data) {
+                    console.log(data);
+                    $(".console-output").text("Ajax Success! Check the console for data.");
+                },
+                error: function(error) {
+                    console.error(error);
+                    $(".console-output").text("Ajax Error! Check the console for details.");
+                }
+            });
+        });
+    </script>
+
+    <!-- Console and Debugger Example -->
+    <div class="console-output">
+        <script>
+            // Debugger example
+            function multiply(a, b) {
+                debugger;
+                return a * b;
+            }
+
+            console.log("Hello, Console!");
+            multiply(5, 3);
+        </script>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8+iuUqnmJ3ZlJIA5AqZgrIZYS5q6ta6Y1gA5L/DdiQJW7XrGrbGx6X6W" crossorigin="anonymous"></script>
+</body>
+
+</html>
