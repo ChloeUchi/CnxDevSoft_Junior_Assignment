@@ -1,8 +1,15 @@
-# React + Vite
+# CnxDevSoft_Junior_Assignment
+Assignment from CnxDevSoft as Front-end dev position
+Assignment from CnxDevSoft as Front-end dev position from assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ข้อ 1
 
-Currently, two official plugins are available:
+Back-end คือส่วนที่ทำงานอยู่เบื้องหลังที่ User ไม่สามารถจะมองเห็นได้โดยตรง แต่จะเป็นส่วนสำคัญที่จะทำให้เว็บไซต์หรือแอปพลิเคชันสามารถทำงานได้ โดยจากรูปจะประกอบไปด้วย 1.Database Server ที่จะทำหน้าที่เก็บข้อมูลที่จำเป็นสำหรับเว็บไซต์หรือแอปพลิเคชัน เช่น ข้อมูลผู้ใช้, ข้อมูลสินค้า หรือข้อมูลอื่นๆที่ต้องการเก็บหรือนำไปใช้ 2.Web Server คือโปรแกรมที่ให้บริการแก่ User โดยจะรับคำขอจากเบราว์เซอร์และส่งข้อมูลกลับผ่านอินเตอร์เน็ต และทำให้ User สามารถดูหน้าเว็บไซต์หรือข้อมูลต่างๆได้ผ่านเว็บเบราว์เซอร์ของตัวเองได้ และยังมีหน้าที่เก็บและจัดการไฟล์ HTML, CSS, JavaScript, รูปภาพ หรือทรัพยากรอื่นๆที่เป็นส่วนประกอบของเว็บไซต์นั้นๆด้วย 3.File Server ใช้ในการเก็บข้อมูลหรือทรัพยากรต่างๆ เช่น ไฟล์รูปภาพ, ไฟล์เอกสาร, หรือไฟล์อื่นๆที่ใช้ในการทำงานของเว็บไซต์
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Front-end คือส่วนที่ User สามารถเห็นและสามารถใช้ตอบโต้ได้โดยตรงผ่านเบราว์เซอร์ หรือแอปพลิเคชัน โดยจะประกอบไปด้วย 1.Web browser/Desktop app จะเป็นหน้าที่ผู้ใช้เห็นเมื่อผู้ใช้เข้านมเว็บไซต์หรือแอปพลิเคชัน 2.Mobile app เป็นโปรแกรมที่ออกแบบและสร้างมาเพื่อให้ผู้ใช้ใช้งานได้ง่าย สามารถติดตั้งเพื่อใช้งานได้ผ่านอุปกรณ์เคลื่อนที่ที่พกพาได้ง่าย เช่น โทรศัพท์
+
+สรุป โดยการเชื่อมต่อระหว่าง front-end และ back-end จะทำผ่านอินเทอร์เน็ต ซึ่งเป็นที่ที่ข้อมูลจะถูกส่งไปมาระหว่างเซิร์ฟเวอร์และ client ในรูปแบบของคำขอเว็บ (web requests) และการตอบกลับ (responses)
+
+ข้อ 2
+
+Bootstrap เป็น framework ที่นำมาใช้สำหรับการพัฒนาเว็บไซต์แบบ responsive โดยจะทำให้เว็บไซต์ของเราที่สร้างขึ้นแสดงผลเป็เว็บไซต์ที่สวยงามและใช้งานง่ายในทุกๆอุปกรณ์ การออกแบบ CSS ด้วย BEM (Block, Element, Modifier) การออกแบบ CSS ด้วย BEM จะช่วยให้โค้ดมีความเป็นระเบียบ เข้าใจง่าย โดยโครงสร้างของ BEM จะประกอบไปด้วย Block, Element, Modifier ที่จะช่วยในการจัดกลุ่มส่วนต่างๆของหน้าเว็บ การใช้ #Id และ .Class การใช้ #Id จะใช้เมื่อต้องการระบุหรือบ่งชี้แบบเฉพาะใน HTML ยกตัวอย่างเช่น #header จะชี้ไปยัง element ที่มี id=”header” ใน HTML ส่วนการใช้ .class จะใช้สำหรับระบุกลุ่มของ elements ที่มีลักษณะเดียวกัน ยกตัวอย่าง เช่น .button ที่จะชี้ไปยัง elements ที่มี class=”button” ใน HTML Ajax เป็นเทคนิคในการโหลดข้อมูลจากเซิร์ฟเวอร์ไปยังเว็บไซต์โดยไม่ต้องรีเฟรชหน้าเว็บทั้งหมด ทำให้สามารถทำงานแบบ asynchronous ได้ โดยทำให้ผู้ใช้งานไม่ต้องรอให้หน้าเว็บโหลดใหม่เมื่อมีการอัปเดตข้อมูล Console และ Debugger Console เป็นตัวที่ใช้ในการแสดงข้อมูลที่ผิดพลาดจาก JavaScript ซึ่งสามารถใช้คำสั่ง console.log() เพื่อแสดงข้อความหรือค่าใดๆ ใน console ของเบราว์เซอร์ Debugger เป็นเครื่องมือที่ใช้ในการ Debug โปรแกรม JavaScript ที่ช่วยให้ Developer สามารถตรวจสอบและแก้ไขข้อผิดพลาดในโค้ดได้ โดยใช้คำสั่ง debugger; เพื่อให้โปรแกรมหยุดการทำงานที่จุดที่ตั้งไว้
